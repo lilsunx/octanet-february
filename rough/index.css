@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  max-height:fit-content;
+  overflow-x: hidden;
+  background-color: black;
+}
+#Home{
+  width: 100%;
+  height:fit-content;
+  overflow-x: hidden;
+}
+.image img{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#Logo img{
+  width: 20px;
+  height: 20px;
+}
+
+nav{
+  z-index: 1000 ;
+  font-size: 18px;
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1f1f1f;
+}
+ul li a span{
+  font-size: 33px;
+  color: red;
+  padding-left:3rem ;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+ul li a:hover{
+   color: red;
+   transition: 0.5s;
+}
+nav ul{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  text-decoration: none;
+  padding:0px 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgb(253, 253, 253);
+  margin-top: 0.5rem;
+  font-weight: 200;
+  font-size: 15px;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar li svg{
+  display: none;
+}
+.sidebar {
+  position: fixed;
+  z-index: 999;
+  height: 100vh;
+  width: 250px;
+  backdrop-filter: blur(10px);
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+ /* Added a transition for smoother animation */
+}
+.hide-menubar{
+  display: none;
+  padding-top: 10px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 1px;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+
+
+
+
+
+@media (max-width: 400px){
+  .information{
+      margin-top: 50%;
+      transform: translateY(-50%);
+      padding-left: 1rem;
+  }
+  .about-para p{
+  padding: 10px;
+  width: 90%;
+  height: 100%;
+      
+  }
+
+  .information h1{
+      font-size: 24px;
+      margin-top: 5rem;
+      font-weight: 400;
+  }
+  .information p{
+      font-size: 15px;
+      
+  }
+  .dot-img img{
+      opacity: 1;
+      z-index: -1;
+      margin-top: 17rem;
+      margin-left: -2rem;
+      
+    } 
+    #Logo{
+   margin-left: -7rem;
+    }
+}
+@media (max-width: 800px) { 
+  
+  .hide{
+      display: none;
+  }
+  .hide-menubar{
+      display: block;
+  }
+  ul li a span{
+      margin-right: 4rem;
+     padding-right: 9rem;
+     display: flex;
+     text-align: center;
+     
+  }
+  .hide-menubar{
+      padding-top: 1rem;
+  }
+  .content{
+      display: grid;
+      grid-template: repeat(3,200px)/repeat(1,200px);
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 10px;
+   }
+   .button{
+      width: 45px;
+      position: none;
+      left: 0;
+      bottom:0;
+   }
+   #images-logo svg{
+      width: 50px;
+      height: 50px;
+      position: none;
+      left: 0;
+      bottom: 0;
+    }
+}
+@media (max-width: 400px) { 
+  .sidebar{
+      width: 100%;
+  }
+}
+
+@media (max-width :400px) {
+  .container1{
+    display: grid;
+    grid-template: repeat(3, 150px) / repeat(2, 150px);
+    gap: 3px;
+    place-content: center;
+    transform: translate(0.5%,16%);
+  }
+  .pro{
+    font-size: 30px;
+  }
+  
+}
+@media (min-width: 992px) {
+  .about-para{
+margin: 10rem;
+padding: 10rem;
+float: right;
+width: 950px;
+height: 600px;
+}
+ }
